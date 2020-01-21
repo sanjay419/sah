@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+    <script src="first.js"></script>
+   
+    <script src="in.js"></script>
+    <script src="inn.js"></script>
+    <!-- //Meta Tags -->
+  <meta charset="UTF-8">
+  <title>SAH</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="bg-light h-100vh position-relative overflow-hidden">
+
+  <div class="p-5 h-100 position-relative z-index-2 overflow-auto  py-3 animated bounceInUp">
+
+    
+    <div class="row">
+      <h1 class="display-4 p-3">Techno Sparks</h1>
+      <!--       Outage warning -->
+   
+
+      <!--       Active users indicator -->
+
+      </div>
+
+      <!--       Weekly users indicator -->
+      <div class="d-flex flex-column p-3 m-3 bg-white shadow-sm rounded animated flipInX delay-4">
+        <div class="text-uppercase text-tracked text-muted mb-2">Co2</div>
+
+        <div class="d-flex justify-content-between">
+          <div>
+            <i class="fas fa-fire opacity-25 mr-2 text-size-3"></i>
+            <span class="text-size-2 text-monospace" id='sen1'></span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="d-flex flex-column p-3 m-3 bg-white shadow-sm rounded animated flipInX delay-5">
+        <div class="text-uppercase text-tracked text-muted mb-2">Co</div>
+
+        <div class="d-flex align-items-center text-size-3">
+          <i class="fas fa-fire opacity-25 mr-2"></i>
+          <div class="text-monospace">
+            <span class="text-size-2"id='sen2' ></span>
+          </div>
+          
+        </div>
+      </div>
+
+      <!--       Bounce rate indicator -->
+      <div class="d-flex flex-column p-3 m-3 bg-white shadow-sm rounded animated flipInX delay-5">
+        <div class="text-uppercase text-tracked text-muted mb-2">Status</div>
+
+        <div class="d-flex align-items-center text-size-3">
+          <i class="fas fa-question-circle opacity-25 mr-2"></i>
+          <div class="text-monospace">
+            <span class="text-size-2"id='sen3' ></span>
+          </div>
+          
+        </div>
+      </div>
+     
+ 
+      <!--       Time on site indicator -->
+      <div class="d-flex flex-column p-3 m-3 bg-white shadow-sm rounded animated flipInX delay-6">
+        <div class="text-uppercase text-tracked text-muted mb-2">Last updated</div>
+
+        <div class="d-flex align-items-center">
+          <i class="fas fa fa-clock opacity-25 mr-2 text-size-3"></i>
+          A second ago
+
+        </div>
+
+      </div>
+
+
+
+      <!--       end of indicators -->
+    </div>
+
+
+  </div>
+  <!--    decoarative tachometers-->
+  <i class="position-absolute z-index-1 fas fa-tachometer-alt text-secondary opacity-25 not-animated infinite pulse slower" style="bottom: 0.25em; right: -0.5em; font-size: 20em;"></i>
+  <i class="position-absolute fas fa-tachometer-alt text-secondary opacity-25 not-animated infinite pulse slower delay-2s" style="bottom: -0.25em; right: 1em; font-size: 15em;"></i>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
