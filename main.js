@@ -34,7 +34,7 @@ function gotData1(data) {
     setsate();
 }
 function setsate(){
-        if(s1>2000||s2>400){
+        if(s1>700||s2>400){
         document.getElementById("sen3").innerHTML = "Danger";
         return;
     }
