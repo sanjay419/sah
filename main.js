@@ -4,7 +4,7 @@ var firebaseConfig = {
     databaseURL: "https://smokemonitoring.firebaseio.com",
     projectId: "smokemonitoring",
 };
-let s1,s2,s3;
+let s1,s2;
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
@@ -34,8 +34,12 @@ function gotData1(data) {
     setsate();
 }
 function setsate(){
-    s3=s1+s2;
-    document.getElementById("sen3").innerHTML = s3;
+        if(s1>2000||s2>400){
+        document.getElementById("sen3").innerHTML = "Danger";
+        return;
+    }
+    document.getElementById("sen3").innerHTML = "Good";
+    
 }
 
 function errData(data) {
